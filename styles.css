@@ -1,0 +1,70 @@
+html{
+    box-sizing: border-box;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+
+}
+body{
+
+    background-image: linear-gradient(180deg,white, black);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border: 2px solid;
+   
+    list-style: none;
+}
+.navbar li{
+    flex: 3;
+    flex-basis:0;
+}
+.navbar .social{
+    flex:1 ;
+}
+
+a{
+    text-decoration: none;
+    padding:20px 5px;
+    margin: 0;
+    color: black;
+    text-align: center;
+    font-weight: 100;
+    display: inline-block;
+    width: 100%;
+}
+a:hover{
+    background:rgba(0,0,0,0.3);
+}
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+    
+}
+
+@media all and (max-width:1000px) {
+    .navbar ul{
+        flex-wrap: wrap;
+    }
+    .navbar li{
+        flex:1 1 50%;
+    }
+    .navbar .social{
+        flex:1 1 25%;
+    }
+}
+@media all and (max-width:500px){
+    .navbar li{
+       flex-basis: 100%;
+    }
+}
