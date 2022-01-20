@@ -51,7 +51,24 @@ a:hover{
     padding: 50px;
     
 }
-
+header{
+    text-align: center;
+    background-color: rgba(0,0,0,0.3);
+    padding: 10px 0;
+}
+.hero{
+  
+   background-color: rgba(0,0,0,0.3);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.hero img{
+    padding: 10px;
+    flex-shrink: 1;
+    max-width: 100%;
+    display: block;
+}
 @media all and (max-width:1000px) {
     .navbar ul{
         flex-wrap: wrap;
@@ -62,26 +79,10 @@ a:hover{
     .navbar .social{
         flex:1 1 25%;
     }
+   
 }
 @media all and (max-width:500px){
     .navbar li{
        flex-basis: 100%;
     }
-}
-header{
-    text-align: center;
-    background-color: rgba(0,0,0,0.3);
-    padding: 10px 0;
-}
-.hero{
-  
-   background-color: rgba(0,0,0,0.3);
-   height: 500px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-.hero img{
-    width: 850px;
-    height: 450px;
 }
